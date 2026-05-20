@@ -29,13 +29,14 @@ Step 7: Save and run the application.
 ```
 /*
 Program to create and design an android application Send SMS using Intent.
-Developed by: AANKARSH J
-Registeration Number : 212223233001
+Developed by: Santhosh P
+Registeration Number : 212224220088
 */
 ```
 
 ### In activity_main.xml
 ```
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -84,7 +85,7 @@ Registeration Number : 212223233001
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.427" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-```
+  ```
 
 ### In MainActivity.java
 ```
@@ -100,8 +101,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-EditText message,phone_number;
-Button send;
+    EditText message,phone_number;
+    Button send;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,43 +127,18 @@ Button send;
         startActivity(intent);
     }
 }
+
 ```
-
-### In AndroidManifest.xml
-```
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.SendSMS"
-        tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
-```
-
 ## OUTPUT
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1e5b8044-ec7a-4ca0-bfca-cbe451461e38" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/12d1dcf0-e6e0-4176-a8db-42fb4482e3e3" />
 
 
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c4ab9d40-0c39-4a0b-96ca-51b31097d770" />
+
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5974e3d2-051e-4c71-a28d-1170d250b8e2" />
 
 
 
